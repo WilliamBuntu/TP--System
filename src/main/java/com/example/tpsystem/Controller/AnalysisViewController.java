@@ -190,7 +190,7 @@ public class AnalysisViewController {
 
         try {
             // Get API key from environment variable
-            String apiKey = "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";
+            String apiKey = System.getenv("HUGGINGFACE_API_KEY");
             if (apiKey == null || apiKey.isEmpty()) {
                 // For development, you could hardcode a key here or show a dialog to get it
                 // apiKey = "your_api_key_here"; // For testing only
